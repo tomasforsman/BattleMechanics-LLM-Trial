@@ -237,45 +237,6 @@ This is a backend/logic prototype—no graphics or UI are needed beyond text out
 
 ---
 
-[Original prompt content continues...]
-
-</details>
-
----
-
-**Project Reviewed and Analyzed by**: AI Assistant  
-**Review Completed**: 2025  
-**Target Framework**: .NET 8.0 (Updated for compatibility)  
-**Review Status**: ✅ Complete
-
-Fixes #1.
-
-You are a game developer. This is a project that will help you get a job if it impresses the client. Your job is to create all the files for a fully working prototype of this project. Each file is important, the design and architecture of the project is important, the code clarity is important. A lot is on the line, it's important to impress and not leave anything unfinished.
-
-I am here to copy and paste each file for you into a .Net 9 console project.
----
-
-# **Project Brief: BattleMechanic** 
-
-## **Project Summary**
-
-Create a **prototype combat engine** for a modular, text-based RPG in C#, designed for future extensibility and modding.
-The system must support **data-driven game objects via YAML files** and allow **modders to define behavior/logic using Lua scripts**.
-This is a backend/logic prototype—no graphics or UI are needed beyond text output. The architecture must be clean, modular, and prepared for possible future support of additional serialization formats or scripting languages. The engine prototype should work as a mini game by itself. 
-
----
-
-## **Goals**
-
-* **Flexible combat loop:** Not hardcoded for “heroes vs enemies”; any number of teams and characters per battle.
-* **Moddable:** All content (characters, teams, actions, etc.) defined as files, not hardcoded.
-* **Scriptable:** Game logic and custom abilities/AI are defined using Lua scripts, loaded at runtime.
-* **Spatial awareness:** Characters exist on a 2D grid (X,Y) even if this does not influence battle mechanics yet.
-* **Extendable:** Structure and document code to allow additional serialization formats (e.g., JSON, TOML) and other scripting engines in the future.
-* **Usable by non-coders:** Modders should be able to add or edit YAML/Lua files to create new content and behaviors.
-
----
-
 ## **Minimum Technical Requirements**
 
 * **Language:** C#, .NET 7+ (console app)
@@ -349,7 +310,6 @@ This is a backend/logic prototype—no graphics or UI are needed beyond text out
 ### **1. Data Loading**
 
 * At startup, recursively load all YAML files from subfolders of `/GameData/` into in-memory objects.
-
   * `/Characters/`, `/Teams/`, `/Actions/`, `/Scripts/`
 * Validate loaded data for missing references, incomplete fields, or errors.
 * Provide clear console error messages if a data file is invalid or incomplete.
@@ -367,12 +327,10 @@ This is a backend/logic prototype—no graphics or UI are needed beyond text out
 * At runtime, load Lua scripts from `/GameData/Scripts/`.
 * When an action or ability with a script is triggered, execute the script in the context of the relevant `user` (acting character) and `target` (targeted character), passing them as Lua-accessible objects.
 * Provide an API in C# for Lua scripts to:
-
   * Get/set character properties (name, HP, position, etc.)
   * Call methods like `take_damage`, `heal`, etc.
   * Print messages to the console.
-* **Example:**
-  Calling the `use_ability(user, target)` Lua function from C# when an ability is triggered.
+* **Example:** Calling the `use_ability(user, target)` Lua function from C# when an ability is triggered.
 
 ### **4. Turn Order & Combat Loop**
 
@@ -392,7 +350,6 @@ This is a backend/logic prototype—no graphics or UI are needed beyond text out
 ### **6. Console Output**
 
 * On each turn, print:
-
   * Turn number and acting character.
   * What action is chosen and its result.
   * HP/status of all characters (including positions).
@@ -409,16 +366,15 @@ This is a backend/logic prototype—no graphics or UI are needed beyond text out
 ### **8. Error Handling**
 
 * Fail gracefully and print errors if:
-
   * Data files are missing, malformed, or incomplete.
   * Scripts fail to load or execute.
   * Modder makes a syntax error in YAML or Lua.
-* Where possible, explain the error and suggest how to fix it (for example, “Missing ‘max\_hp’ in knight.yaml”).
+* Where possible, explain the error and suggest how to fix it (for example, "Missing 'max\_hp' in knight.yaml").
 
 ### **9. Project Structure Example**
 
 ```
-/GameData/
+./GameData/
     /Characters/
         knight.yaml
         mage.yaml
@@ -430,7 +386,7 @@ This is a backend/logic prototype—no graphics or UI are needed beyond text out
     /Scripts/
         fireball.lua
         ai_simple.lua
-/CombatPrototype/
+./CombatPrototype/
     Program.cs
     Character.cs
     Team.cs
@@ -452,7 +408,6 @@ This is a backend/logic prototype—no graphics or UI are needed beyond text out
 * Includes sample YAML data and Lua scripts for easy modding.
 * Clean, modular code with comments and simple docs for how to add new content.
 * **README.md** explaining:
-
   * How the system works
   * Folder/file structure
   * How to add new characters, teams, abilities, or scripts
@@ -464,7 +419,7 @@ This is a backend/logic prototype—no graphics or UI are needed beyond text out
 ## **Stretch Goals (if time allows, not required)**
 
 * Allow team/character/ability files to specify custom fields for modders (e.g., flavor text).
-* Simple status effect support (e.g., “poisoned”).
+* Simple status effect support (e.g., "poisoned").
 * Hot-reload data/scripts without restarting app.
 * Provide a way to override battle win conditions from YAML or script.
 
@@ -484,4 +439,15 @@ Build a **clean, modular, and data-driven RPG combat engine in C#**:
 
 *The codebase must be easy for another developer or a modder to understand, extend, and maintain. The first priority is clarity, modularity, and safe handling of external data/scripts.*
 ---------
-This is your chance to be great, let's impress the clients with a project that will make them awe your powers as a game developer. 
+This is your chance to be great, let's impress the clients with a project that will make them awe your powers as a game developer.
+
+</details>
+
+---
+
+**Project Reviewed and Analyzed by**: AI Assistant  
+**Review Completed**: 2025  
+**Target Framework**: .NET 8.0 (Updated for compatibility)  
+**Review Status**: ✅ Complete
+
+Fixes #1.

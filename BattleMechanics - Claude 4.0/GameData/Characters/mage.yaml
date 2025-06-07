@@ -1,0 +1,13 @@
+name: Mage
+team: Heroes
+max_hp: 20
+attack: 12
+defense: 2
+speed: 6
+x: 1
+y: 1
+abilities:
+  - attack
+  - fireball
+  - heal
+ai_script: null

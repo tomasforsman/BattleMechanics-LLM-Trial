@@ -1,0 +1,5 @@
+- name: Red
+  members: [Knight]
+
+- name: Blue
+  members: [Mage]

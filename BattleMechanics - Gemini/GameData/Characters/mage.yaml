@@ -1,0 +1,12 @@
+name: Mage
+team: Blue
+max_hp: 20
+attack: 3
+defense: 2
+speed: 6
+x: 0
+y: 1
+abilities:
+  - attack
+  - fireball
+ai_script: ai_simple_melee.lua

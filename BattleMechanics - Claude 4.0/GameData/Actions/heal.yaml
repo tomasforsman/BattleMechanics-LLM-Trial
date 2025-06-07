@@ -1,0 +1,3 @@
+name: Heal
+description: "Restore health to the target"
+script: heal.lua

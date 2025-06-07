@@ -1,0 +1,3 @@
+name: Special Strike
+description: "A powerful attack that ignores defense"
+script: special_strike.lua

@@ -1,0 +1,13 @@
+name: Knight
+team: Heroes
+max_hp: 35
+attack: 8
+defense: 5
+speed: 4
+x: 0
+y: 1
+abilities:
+  - attack
+  - defend
+  - special_strike
+ai_script: null

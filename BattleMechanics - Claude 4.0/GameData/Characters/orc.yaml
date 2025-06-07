@@ -1,0 +1,12 @@
+name: Orc Warrior
+team: Enemies
+max_hp: 40
+attack: 9
+defense: 4
+speed: 3
+x: 0
+y: 0
+abilities:
+  - attack
+  - special_strike
+ai_script: ai_aggressive.lua

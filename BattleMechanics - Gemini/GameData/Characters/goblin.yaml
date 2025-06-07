@@ -1,0 +1,11 @@
+name: Goblin
+team: Red
+max_hp: 15
+attack: 6
+defense: 2
+speed: 7
+x: 1
+y: 4
+abilities:
+  - attack
+ai_script: ai_simple_melee.lua

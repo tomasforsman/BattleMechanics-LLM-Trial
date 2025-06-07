@@ -1,0 +1,3 @@
+name: fireball
+description: "Hurls a fireball at the target"
+script: fireball.lua

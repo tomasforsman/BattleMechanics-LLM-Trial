@@ -1,0 +1,3 @@
+name: attack
+description: "A standard physical attack."
+script: ability_damage.lua # Point to the new, generic damage script

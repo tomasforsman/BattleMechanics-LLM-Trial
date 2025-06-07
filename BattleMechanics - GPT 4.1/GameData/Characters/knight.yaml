@@ -1,0 +1,11 @@
+name: Knight
+team: Red
+max_hp: 30
+attack: 10
+defense: 4
+speed: 5
+x: 0
+y: 1
+abilities:
+  - attack
+ai_script: ai_simple.lua

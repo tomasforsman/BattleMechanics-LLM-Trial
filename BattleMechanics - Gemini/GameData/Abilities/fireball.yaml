@@ -1,0 +1,3 @@
+name: fireball
+description: "Hurls a magical fireball that ignores some defense."
+script: ability_damage.lua # Point to the new, generic damage script

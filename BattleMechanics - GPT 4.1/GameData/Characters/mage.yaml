@@ -1,0 +1,11 @@
+name: Mage
+team: Blue
+max_hp: 20
+attack: 8
+defense: 2
+speed: 7
+x: 2
+y: 1
+abilities:
+  - attack
+  - fireball

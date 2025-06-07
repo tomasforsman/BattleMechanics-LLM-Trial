@@ -1,0 +1,3 @@
+name: defend
+description: "Greatly increases defense until the next action."
+script: defend.lua

@@ -1,0 +1,5 @@
+name: Blue Team
+is_player_controlled: true
+members:
+  - knight
+  - mage

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleMechanics - GPT 4.1", "BattleMechanics - GPT 4.1\BattleMechanics - GPT 4.1.csproj", "{7E8B2F94-2726-4125-95A8-D005F0B46A94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleMechanics - GPT 4.5", "BattleMechanics - GPT 4.5\BattleMechanics - GPT 4.5.csproj", "{D26C06EA-BF41-4A73-B387-4C6D17DC295D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleMechanics - Gemini", "BattleMechanics - Gemini\BattleMechanics - Gemini.csproj", "{0C0665A3-CFEF-481D-80BB-BF3C7E876DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleMechanics - Claude 4.0", "BattleMechanics - Claude 4.0\BattleMechanics - Claude 4.0.csproj", "{5DBFE746-C924-4741-8F5A-4525EC72DF2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E8B2F94-2726-4125-95A8-D005F0B46A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8B2F94-2726-4125-95A8-D005F0B46A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8B2F94-2726-4125-95A8-D005F0B46A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8B2F94-2726-4125-95A8-D005F0B46A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D26C06EA-BF41-4A73-B387-4C6D17DC295D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D26C06EA-BF41-4A73-B387-4C6D17DC295D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D26C06EA-BF41-4A73-B387-4C6D17DC295D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D26C06EA-BF41-4A73-B387-4C6D17DC295D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C0665A3-CFEF-481D-80BB-BF3C7E876DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C0665A3-CFEF-481D-80BB-BF3C7E876DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C0665A3-CFEF-481D-80BB-BF3C7E876DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C0665A3-CFEF-481D-80BB-BF3C7E876DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DBFE746-C924-4741-8F5A-4525EC72DF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBFE746-C924-4741-8F5A-4525EC72DF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBFE746-C924-4741-8F5A-4525EC72DF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBFE746-C924-4741-8F5A-4525EC72DF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

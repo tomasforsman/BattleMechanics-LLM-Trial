@@ -1,0 +1,5 @@
+name: Red Team
+is_player_controlled: false
+members:
+  - goblin
+  - orc

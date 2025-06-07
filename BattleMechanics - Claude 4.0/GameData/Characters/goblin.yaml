@@ -1,0 +1,13 @@
+name: Goblin Shaman
+team: Enemies
+max_hp: 18
+attack: 6
+defense: 2
+speed: 5
+x: 1
+y: 0
+abilities:
+  - attack
+  - fireball
+  - heal
+ai_script: ai_simple.lua
